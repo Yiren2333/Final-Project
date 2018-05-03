@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Miami Trip</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css" integrity="sha256-oDCP2dNW17Y1QhBwQ+u2kLaKxoauWvIGks3a4as9QKs=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<!--navigation bar -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+<!--banner and titile-->
+    <div class="banner">
+        <div class="centered"><h1 style="font-size: 120px; font-family:Pacifico; color:white; text-align: center;">Sunny, Sea, Hemingway</h1></div>
+        <img src="pictures/WechatIMG234.jpg" alt="Hemingway house" style="width: 100%;">
+        <br><br>
+    </div> 
+      
+<!--introduction box-->      
+<div class="introduction">   
+    <!--Miami beach-->
+    <div id="introduction-container" class="ui three column grid">
+        <div class="column">
+            <div class="ui segment">
+            <img src="pictures/WechatIMG242.jpg" style="width: 100%;">
+            <h3>Miami Beach</h3>
+            <p>Miami Beach is a south Florida island city, it connectes bridges to mainland Miami. The most popular spot in the Miami beach is the south beach.White sand, blue seawater, bikini girls....I suggested spending all long along to just lying down on the beach, enjoying the sunshine. Life is so chill there. Espeacially I escaped from New York's stormy weather. There are many things you can try in the Miami beach......</p>
+            <button class="ui purple button" onclick="openPopupMenu('1')">Read More</button>
+        </div>
+    </div>
+        <!--keywest-->
+        <div class="column">
+            <div class="ui segment">
+            <img src="pictures/1.jpg" style="width: 100%;">
+            <h3>Key West</h3>
+            <p>Key West is a scenic spots which I highly recommend, it's Florida's southernmost point, lying roughly 90 miles north of Cuba. Famed for its pastel-hued, conch-style houses, it’s a cruise-ship stop also accessible from the mainland via the Overseas Highway. It’s known more for its coral reefs – destinations for diving and snorkeling – than for its beaches.Key West is a cute island which contains interesting activities and .......</p>
+            <button class="ui purple button" onclick="openPopupMenu('2')">Read More</button>
+        </div>
+    </div>
+         <!--Hemingway-->
+        <div class="column">
+            <div class="ui segment">
+            <img src="pictures/2.jpg" style="width: 100%;">
+            <h3>Hemingway former residence</h3>
+            <p>Hemingway former residence is one of the biggest spots in the key west. The residence is really beautiful and luxury. It contains stories and six-toes cat! There is a great tour guide in the residence, he introduced many interesting anecdoted stories about Hemingway like he has 5 marriages, he also wrote his book in a specific loft room, he travelled to Cuba for many times, his son raised the first generation of the six-toes cat .....</p>
+            <button class="ui purple button" onclick="openPopupMenu('3')">Read More</button>
+        </div>
+    </div>
+    </div>
+</div>  
+    
+      
+<!--popup box--> 
+<div id="popup_bg" class="bg1">
+    <div id="popup_main_div">
+        <div id="close_popup_div" onclick="closePopupMenu('1')">
+            Close    
+        </div>
+        
+            
+        <!--popup content-->    
+		<div>
+			<div class = "beach">
+				<p><img src="pictures/3-2.jpg" style="margin: auto;"><br>
+				Paddleing Boat is an interesting activity I have tried in Miami. This is the first time I played paddleing boat. At first, it felts unbalanced when you tried to stand up in the boat.Don't be to hash to stand up, get used to sitting in the boat first. And remeber to slide with each side.</p>
+			</div>
+			<div class = "beach" style="display: none;">   
+				<p><img src="pictures/food1.jpg"><br>
+				Miami is very close to Cuba. So there are many delicious Cuba food. This one is an old Cuba restaurant.They are famous for their seafood dishes. </p>
+			</div>
+		</div>
+		<i id="chevronleft" class="chevron circle left icon" onclick="changeContent(-1, this)"></i>
+		<i id="chevronright" class="chevron circle right icon" onclick="changeContent(1, this)"></i>
+     </div>
+</div>
+    
+    
+<!--popup box--> 
+<div id="popup_bg" class="bg2">
+    <div id="popup_main_div">
+        <div id="close_popup_div" onclick="closePopupMenu('2')">
+            Close   
+        </div>
+        <div>
+			 <!--popup content-->       
+			<div class = "beach">
+				<p><img src="pictures/keywest-2.jpg" style="margin: auto;"><br>
+			  Road trip is highly recommend in Key west. When you guys drive a car, you can also appreciate the beatufiul scenery along the sea.Play some music, chat with friends, so chill it is.</p>
+			</div>
+			
+			<div class = "beach" style="display: none;">   
+				<p><img src="pictures/keywest-3.jpg"><br>
+				Riding bicyle is also a good choice in key west.Key west is a small town, so bicycle might be the best to take around the all key west. You can ride to the plaza of the key West. Every afternoon, many people will celebrate the sunset together at the plaza.</p>
+			</div>
+			
+		    <div class = "beach" style="display: none;">   
+				<p><img src="pictures/keywest-1.jpg"><br>
+				The restaurant I recommend in Key West is called Banana Cafe. It has a long history in the Key West.The decoration in this restaurant is really cute. All color is in yellow, like the wall painting or the plates. And the food there is incredibly good.</p>
+			</div>
+		</div>
+		<i id="chevronleft" class="chevron circle left icon" onclick="changeContent(-1, this)"></i>
+		<i id="chevronright" class="chevron circle right icon" onclick="changeContent(1, this)"></i>
+    </div>
+</div>
+       
+<!--popup box--> 
+<div id="popup_bg" class="bg3">
+    <div id="popup_main_div">
+        <div id="close_popup_div" onclick="closePopupMenu('3')">
+            Close 
+			<!--popup content-->   
+			<div>		
+				<div class = "beach">
+					<p style="font-family: lato;"><img src="pictures/heming-1.jpg" style="margin: auto;"><br>
+					The decoration style in the residence is really amazing. A little bit vintage and tropical style.Very fashionable style.The best part I love in the house is the BATHROOM!!! Yeah, I know.</p>
+				</div>
+				
+				<div class = "beach" style="display: none;">   
+					<p style="font-family: lato;"><img src="pictures/heming-2.jpg" style="margin: auto; text align:left;"><br>
+					For now, there are 55 six-toes cats in the Hemingway residence.They are all descendant from the first generation cat called Snow White who was raised by Hemingway's younger son. </p>
+				</div>
+			</div>
+		</div>
+		<i id="chevronleft" class="chevron circle left icon" onclick="changeContent(-1, this)"></i>
+		<i id="chevronright" class="chevron circle right icon" onclick="changeContent(1, this)"></i>  
+    </div>
+</div>
+    
+
+   
+	<!--click button for popup js-->
+	<script type="text/javascript">
+		function openPopupMenu(number) {
+			var popupDiv = document.getElementsByClassName("bg" + number)[0];
+			popupDiv.style.display = "block";
+		}
+		function closePopupMenu(number) {
+			var popupDiv = document.getElementsByClassName("bg" + number)[0];
+			popupDiv.style.display = "none";
+		}
+	</script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+	<script>
+		function changeContent(factor, element){
+			var visibleContent = $(element).parent().find("div.beach:visible"); // The current visible content on the popup
+			if (factor==1) { // For increment
+				visibleContent.hide(); // Hide current visible element
+				if(visibleContent.next().length!=0) {  // if the next content is present
+					visibleContent.next().show(); // Show next
+				} else {
+					$(element).parent().find("div.beach").first().show(); // Else show first
+				}
+			} else { // For decrement
+				visibleContent.hide(); // Hide current visible element
+				if(visibleContent.prev().length!=0) { // if the previous content is present
+					visibleContent.prev().show(); // Show previous
+				} else {
+					$(element).parent().find("div.beach").last().show(); // Else show last
+				}
+			}
+		}
+	</script>
+</body>
+</html>
